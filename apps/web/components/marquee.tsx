@@ -16,7 +16,7 @@ export function Marquee({ items, className }: { items: string[]; className?: str
   )
 
   return (
-    <div className={cn("mx-auto max-w-7xl px-4 sm:px-6 my-6 md:my-10", className)}>
+    <div className={cn("mx-auto w-full max-w-7xl overflow-hidden px-4 sm:px-6 my-6 md:my-10", className)}>
       <div
         className="relative overflow-hidden rounded-full border border-border/80 bg-muted/25 py-3.5 shadow-sm backdrop-blur-sm sm:py-4 md:py-4.5"
         aria-hidden

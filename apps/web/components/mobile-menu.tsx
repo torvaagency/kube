@@ -65,11 +65,13 @@ export function MobileMenu({
             aria-hidden={!open}
             data-lenis-prevent
             className={cn(
-              "fixed inset-0 z-[100] flex flex-col lg:hidden overflow-y-auto bg-background/98 text-foreground transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] backdrop-blur-2xl",
+              "fixed inset-0 z-[100] flex flex-col lg:hidden overflow-y-auto overflow-x-hidden bg-background/98 text-foreground transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] backdrop-blur-2xl",
               open ? "translate-y-0 opacity-100 pointer-events-auto" : "-translate-y-full opacity-0 pointer-events-none"
             )}>
-            <div aria-hidden className="pointer-events-none absolute -top-32 right-0 size-96 rounded-full bg-primary/15 blur-3xl" />
-            <div aria-hidden className="pointer-events-none absolute bottom-0 -left-20 size-80 rounded-full bg-primary/15 blur-3xl" />
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div aria-hidden className="absolute -top-32 right-0 size-96 rounded-full bg-primary/15 blur-3xl" />
+              <div aria-hidden className="absolute bottom-0 -left-20 size-80 rounded-full bg-primary/15 blur-3xl" />
+            </div>
 
             <div className="relative z-10 flex items-center justify-between border-b border-border/80 px-6 py-4 sm:py-5">
               <span className="text-xl font-semibold tracking-tight">kube</span>

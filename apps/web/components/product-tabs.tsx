@@ -122,11 +122,11 @@ export function ProductTabs() {
           Everything a growing business needs to stay fast, secure and online, without the busywork.
         </p>
 
-        <div className="mt-8 flex justify-center md:mt-12">
+        <div className="mt-8 flex justify-center md:mt-12 w-full max-w-full overflow-hidden px-1">
           <div
             role="tablist"
             aria-label="Platform features"
-            className="inline-flex max-w-full items-center gap-1 overflow-x-auto rounded-full border border-border/80 bg-muted/70 p-1 backdrop-blur-sm sm:p-1.5"
+            className="inline-flex max-w-full items-center gap-1 overflow-x-auto rounded-full border border-border/80 bg-muted/70 p-1 backdrop-blur-sm sm:p-1.5 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
           >
             {tabs.map((t) => {
               const isActive = t.id === active

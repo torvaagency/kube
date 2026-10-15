@@ -36,7 +36,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, fontDisplay.variable, "font-sans", inter.variable)}
     >
-      <body>
+      <body className="overflow-x-hidden max-w-[100vw] w-full">
         <ThemeProvider>
           <SmoothScroll />
           {children}

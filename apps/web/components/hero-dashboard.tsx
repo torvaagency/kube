@@ -6,8 +6,10 @@ const uptime = [62, 78, 70, 88, 74, 92, 80, 96, 84, 90, 94, 98]
 export function HeroDashboard() {
   return (
     <div className="relative mx-auto w-full max-w-5xl px-4 sm:px-6">
-      <div aria-hidden className="pointer-events-none absolute inset-x-16 -top-8 -z-10 h-48 rounded-full bg-primary/20 dark:bg-primary/25 blur-3xl animate-[pulse_6s_ease-in-out_infinite]" />
-      <div aria-hidden className="pointer-events-none absolute right-10 bottom-0 -z-10 h-40 w-64 rounded-full bg-primary/15 blur-3xl animate-[pulse_8s_ease-in-out_1.5s_infinite]" />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div aria-hidden className="absolute inset-x-16 -top-8 -z-10 h-48 rounded-full bg-primary/20 dark:bg-primary/25 blur-3xl animate-[pulse_6s_ease-in-out_infinite]" />
+        <div aria-hidden className="absolute right-10 bottom-0 -z-10 h-40 w-64 rounded-full bg-primary/15 blur-3xl animate-[pulse_8s_ease-in-out_1.5s_infinite]" />
+      </div>
       <div className="overflow-hidden rounded-2xl border bg-card text-left shadow-2xl shadow-black/5 dark:shadow-primary/10 transition-all duration-500 hover:shadow-primary/20 hover:-translate-y-1">
         {/* Window bar */}
         <div className="flex items-center justify-between gap-3 border-b px-4 py-2.5 sm:px-5 sm:py-3">

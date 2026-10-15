@@ -86,7 +86,7 @@ export default function Page() {
   return (
     <>
       <SiteHeader />
-      <main className="relative z-10">
+      <main className="relative z-10 w-full max-w-full overflow-x-hidden">
         {/* Hero */}
         <div className="relative overflow-hidden">
           <HeroImageBackground />
@@ -117,7 +117,7 @@ export default function Page() {
         <Marquee items={["Managed Plesk Servers", "Web Development", "Mobile Apps", "WordPress Hosting", "VPS Management", "DNS & SSL", "Direct Support"]} />
 
         {/* Stats */}
-        <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section className="relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
           <SectionLabel label="Results" index="01" />
           <h2 className="mx-auto max-w-3xl text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">Reliability you can measure.</h2>
           <div className="mt-10 grid gap-px overflow-hidden rounded-2xl border bg-border md:mt-14 md:grid-cols-3">
@@ -137,7 +137,7 @@ export default function Page() {
         </section>
 
         {/* Services */}
-        <section id="services" className="scroll-mt-24 relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section id="services" className="scroll-mt-24 relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
           <div aria-hidden className="pointer-events-none absolute -top-12 left-1/4 -z-10 h-80 w-80 -translate-x-1/2 rounded-full bg-primary/15 blur-3xl filter animate-[pulse_7s_ease-in-out_infinite] dark:bg-primary/10" />
           <div aria-hidden className="pointer-events-none absolute bottom-10 right-1/4 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl filter animate-[pulse_9s_ease-in-out_1s_infinite]" />
           <SectionLabel label="Services" index="02" />
@@ -160,8 +160,8 @@ export default function Page() {
         </section>
 
         {/* Hosting */}
-        <section id="hosting" className="scroll-mt-24 bg-muted/20">
-          <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section id="hosting" className="scroll-mt-24 relative overflow-hidden bg-muted/20">
+          <div className="relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
             <div aria-hidden className="pointer-events-none absolute top-1/3 left-1/2 -z-10 h-80 w-[500px] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl filter animate-[pulse_8s_ease-in-out_infinite] dark:bg-primary/10" />
             <SectionLabel label="Hosting" index="03" />
             <ScrollText className="mx-auto max-w-3xl text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">Hosting that stays up.</ScrollText>
@@ -243,8 +243,8 @@ export default function Page() {
         <ProductTabs />
 
         {/* Why Kube */}
-        <section id="why-kube" className="scroll-mt-24 bg-muted/20">
-          <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section id="why-kube" className="scroll-mt-24 relative overflow-hidden bg-muted/20">
+          <div className="relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
             <SectionLabel label="Why Kube" index="05" />
             <ScrollText className="mx-auto max-w-3xl text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">Built for businesses that rely on being online.</ScrollText>
             <p className="mx-auto mt-3.5 max-w-2xl text-center text-sm text-muted-foreground sm:text-base leading-relaxed">The practical things that make Kube easier to work with than a typical host.</p>
@@ -270,7 +270,7 @@ export default function Page() {
         </section>
 
         {/* Process */}
-        <section id="process" className="scroll-mt-24 relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section id="process" className="scroll-mt-24 relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
           <div aria-hidden className="pointer-events-none absolute top-20 right-10 -z-10 h-80 w-80 rounded-full bg-primary/10 blur-3xl filter animate-[pulse_8s_ease-in-out_infinite]" />
           <SectionLabel label="Process" index="06" />
           <ScrollText className="mx-auto max-w-3xl text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">A clear, straightforward process.</ScrollText>
@@ -289,8 +289,8 @@ export default function Page() {
         </section>
 
         {/* FAQ */}
-        <section id="faq" className="scroll-mt-24 bg-muted/20">
-          <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
+        <section id="faq" className="scroll-mt-24 relative overflow-hidden bg-muted/20">
+          <div className="relative overflow-hidden mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 md:py-20">
             <SectionLabel label="FAQ" index="07" />
             <ScrollText className="mx-auto max-w-3xl text-center text-2xl font-semibold tracking-tight sm:text-3xl md:text-4xl">Questions, answered.</ScrollText>
             <p className="mx-auto mt-3.5 max-w-2xl text-center text-sm text-muted-foreground sm:text-base leading-relaxed">Have a specific requirement? Reach out and you'll speak directly with us.</p>
@@ -309,7 +309,7 @@ export default function Page() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="scroll-mt-24 relative mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
+        <section id="contact" className="scroll-mt-24 relative overflow-hidden mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
           <div
             aria-hidden
             className="pointer-events-none absolute top-10 left-1/3 -z-10 h-96 w-[35rem] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl filter animate-[pulse_8s_ease-in-out_infinite] dark:bg-primary/10"
