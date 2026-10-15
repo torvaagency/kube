@@ -97,32 +97,32 @@ export function CloudOutlines() {
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-5 overflow-hidden select-none"
     >
-      {/* Cloud 1 - Top Left: Fluffy cumulus outline */}
+      {/* Cloud 1 - Top Left: Fluffy cumulus outline, sits cleanly beneath navbar */}
       <div
         className={cn(
-          "absolute -top-2 sm:top-2 left-[3%] sm:left-[6%] md:left-[8%]",
-          "w-44 sm:w-56 md:w-64 opacity-65 dark:opacity-50",
+          "absolute top-24 sm:top-28 left-[3%] sm:left-[6%] md:left-[8%]",
+          "w-36 sm:w-48 md:w-56 opacity-65 dark:opacity-50",
           "drop-shadow-[0_4px_16px_rgba(15,39,82,0.18)] dark:drop-shadow-[0_0_14px_rgba(255,255,255,0.25)]"
         )}
       >
         <CloudShape1 className="w-full h-auto" />
       </div>
 
-      {/* Cloud 2 - Top Right: Elongated cirrus outline */}
+      {/* Cloud 2 - Top Right: Elongated cirrus outline, sits cleanly beneath navbar */}
       <div
         className={cn(
-          "absolute top-6 right-[4%] sm:right-[8%] md:right-[10%]",
-          "w-48 sm:w-64 md:w-72 opacity-60 dark:opacity-45",
+          "absolute top-28 sm:top-32 right-[4%] sm:right-[8%] md:right-[10%]",
+          "w-40 sm:w-56 md:w-64 opacity-60 dark:opacity-45",
           "drop-shadow-[0_4px_18px_rgba(15,39,82,0.18)] dark:drop-shadow-[0_0_16px_rgba(255,255,255,0.22)]"
         )}
       >
         <CloudShape2 className="w-full h-auto" />
       </div>
 
-      {/* Cloud 3 - Mid Left: Compact puffy cloud near headline */}
+      {/* Cloud 3 - Mid Left: Compact puffy cloud beside hero subtext */}
       <div
         className={cn(
-          "hidden sm:block absolute top-64 sm:top-72 left-[6%] sm:left-[10%] md:left-[14%]",
+          "hidden sm:block absolute top-[22rem] sm:top-[24rem] left-[6%] sm:left-[10%] md:left-[14%]",
           "w-28 sm:w-36 md:w-44 opacity-55 dark:opacity-40",
           "drop-shadow-[0_3px_12px_rgba(15,39,82,0.15)] dark:drop-shadow-[0_0_12px_rgba(255,255,255,0.20)]"
         )}
@@ -133,8 +133,8 @@ export function CloudOutlines() {
       {/* Cloud 4 - Mid Right: Beside dashboard preview */}
       <div
         className={cn(
-          "absolute top-[28rem] sm:top-[30rem] right-[5%] sm:right-[9%] md:right-[12%]",
-          "w-40 sm:w-52 md:w-60 opacity-60 dark:opacity-45",
+          "absolute top-[32rem] sm:top-[34rem] right-[5%] sm:right-[9%] md:right-[12%]",
+          "w-36 sm:w-48 md:w-56 opacity-60 dark:opacity-45",
           "drop-shadow-[0_4px_16px_rgba(15,39,82,0.18)] dark:drop-shadow-[0_0_14px_rgba(255,255,255,0.25)]"
         )}
       >
@@ -144,8 +144,8 @@ export function CloudOutlines() {
       {/* Cloud 5 - Lower Center-Left: Subtle behind dashboard */}
       <div
         className={cn(
-          "hidden md:block absolute bottom-12 left-[18%] lg:left-[22%]",
-          "w-40 lg:w-48 opacity-50 dark:opacity-35",
+          "hidden md:block absolute bottom-16 sm:bottom-20 left-[16%] lg:left-[20%]",
+          "w-36 lg:w-44 opacity-50 dark:opacity-35",
           "drop-shadow-[0_3px_14px_rgba(15,39,82,0.15)] dark:drop-shadow-[0_0_12px_rgba(255,255,255,0.20)]"
         )}
       >
