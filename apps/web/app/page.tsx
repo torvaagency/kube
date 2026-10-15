@@ -92,13 +92,7 @@ export default function Page() {
           <HeroImageBackground />
           <CloudOutlines />
           <section className="mx-auto flex max-w-4xl flex-col items-center px-4 pt-20 pb-12 text-center sm:px-6 sm:pt-28 md:pt-32 md:pb-16">
-            <p className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-border/80 bg-background/70 px-3.5 py-1 text-xs font-semibold tracking-widest text-muted-foreground uppercase backdrop-blur shadow-xs animate-[fade-up_0.8s_ease-out_both] sm:px-4 sm:py-1.5">
-              <span className="relative flex size-2">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
-                <span className="relative inline-flex size-2 rounded-full bg-primary" />
-              </span>
-              Plesk Servers · Web & App Development
-            </p>
+
             <h1 className="text-4xl leading-[1.12] font-semibold tracking-tight break-words animate-[fade-up_0.8s_ease-out_0.1s_both] sm:text-5xl md:text-6xl">
               Websites, apps & managed servers.{" "}
               <span className="text-primary">Done right.</span>
